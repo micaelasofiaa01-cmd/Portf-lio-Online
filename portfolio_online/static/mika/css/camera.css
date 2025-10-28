@@ -1,0 +1,189 @@
+.camera-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 60px;
+}
+
+.camera-frame {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+.camera-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* FOTO dentro do visor - agora com posicionamento proporcional */
+.photo-inside {
+  position: absolute;
+  top: 47%;    /* ajusta conforme a tua imagem */
+  left: 15.7%;   /* ajusta conforme a tua imagem */
+  width: 47%;  /* largura do visor */
+  height: 42%; /* altura do visor */
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  z-index: 2;
+}
+
+
+.nav-arrow {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  z-index: 3;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-arrow svg {
+  stroke: #fff;
+  width: 24px;
+  height: 24px;
+}
+
+.nav-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-arrow:hover svg {
+  stroke: #111;
+}
+
+.left-arrow {
+  left: -55px;
+}
+
+.right-arrow {
+  right: -55px;
+}
+
+@media (max-width: 768px) {
+  .nav-arrow {
+    display: none;
+  }
+}
+
+/* FOTO DE PERFIL TOPO */
+
+.foto-redonda {
+  width: 175px;
+  height: 175px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  overflow: hidden;              /* Isso garante que o zoom fique dentro do círculo */
+  border: 3px solid #bac964;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto-zoom {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;  /* Ajusta a parte visível do rosto */
+  transform: scale(2);        /* Esse é o zoom — ajusta conforme precisares */
+}
+
+.moldura-jogos-wrapper {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.moldura-jogos {
+  background-color: #bac964;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #bac964;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.moldura-jogos:hover {
+  transform: scale(1.05);
+}
+
+.foto-jogos.imagem {
+  width: 75px;
+  object-fit: cover;
+}
+
+/* === Modal === */
+.video-modal {
+  display: none; /* oculto por padrão */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7); /* fundo opaco */
+  justify-content: center;
+  align-items: center;
+}
+
+.video-modal-content {
+  background: #222;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  max-width: 480px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.video-modal video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.close-modal {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  background: #0008;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  transition: background 0.2s;
+}
+
+.close-modal:hover {
+  background: #bac964;
+  color: #000;
+}
+
+.site-link {
+  color: rgba(240, 248, 255, 0.745) !important;
+}
+
+
+

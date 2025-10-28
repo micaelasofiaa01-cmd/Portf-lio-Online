@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+	<title>Portfólio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="{{ url_for('static', filename='mika/css/animate.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='mika/css/flexslider.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='mika/fonts/icomoon/style.css') }}">
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='mika/css/bootstrap.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='mika/css/style.css') }}">
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='mika/css/camera.css') }}">
+
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+
+	<link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='mika/favicon/favicon.png') }}">
+
+</head>
+
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+
+
+
+	<nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
+
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09"
+				aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="#section-home">Início</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-resume">Resumo</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-about">Sobre</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-portfolio">Portfólio</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-contact">Contacto</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+	<section class="site-hero" style="background-image: url(static/mika/images/teste_1.png);" id="section-home"
+		data-stellar-background-ratio="0.5">
+		<div class="container">
+			<div class="row intro-text align-items-center justify-content-center">
+				<div class="col-md-10 text-center pt-5">
+					<div class="foto-redonda mx-auto d-block">
+						<img src="{{ url_for('static', filename='mika/images/mika.jpg') }}" alt="Minha foto"
+							class="foto-zoom">
+					</div>
+
+					<h1 class="site-heading site-animate">Olá, sou a <strong class="d-block">Micaela Florêncio</strong>
+					</h1>
+					<strong class="d-block text-white text-uppercase letter-spacing"></strong>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- EDUCAÇÃO -->
+
+	<section class="site-section" id="section-resume">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center">
+						<h2>Meu <strong>Resumo</strong></h2>
+					</div>
+				</div>
+
+				<!-- EDUCAÇÃO -->
+				<div class="col-md-12">
+					<h2 class="mb-5 text-center">Educação</h2>
+
+					<!-- Primeira linha: 2 cursos lado a lado -->
+					<div class="row">
+						<div class="col-md-6">
+							<div class="resume-item mb-4">
+								<span class="date"><span class="icon-calendar"></span> Abril 2025 - Outubro 2025</span>
+								<h3>Curso Programação Python</h3>
+								<br>
+								<span class="school">IEFP, Porto</span>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="resume-item mb-4">
+								<span class="date"><span class="icon-calendar"></span> Fevereiro 2023 - Março
+									2023</span>
+								<h3>Curso Iniciação à Fotografia</h3>
+								<br>
+								<span class="school">Cenjor, Lisboa</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- Segunda linha: 1 curso centralizado -->
+					<div class="row justify-content-center">
+						<div class="col-md-6">
+							<div class="resume-item mb-4">
+								<span class="date"><span class="icon-calendar"></span> Setembro 2017 - Junho 2020</span>
+								<h3>Ensino Secundário em Artes Visuais</h3>
+								<br>
+								<span class="school">Escola Secundária de Casquilhos, Barreiro</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- SKILLS -->
+				<div class="col-md-12 mt-5">
+					<h2 class="mb-5 text-center">Skills</h2>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="resume-item mb-4">
+								<span class="date">BACK-END</span>
+								<h3>Python, MySQL</h3>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="resume-item mb-4">
+								<span class="date">FRONT-END</span>
+								<h3>HTML, CSS, JavaScript, Figma, Canva</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<!-- SOBRE MIM-->
+
+	<section class="site-section" id="section-about">
+		<div class="container">
+			<div class="row mb-5 align-items-center">
+				<div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
+					<img src="{{ url_for('static', filename='mika/images/mika_3.jpg') }}" alt="Image placeholder"
+						class="img-fluid">
+				</div>
+				<div class="col-lg-5 pl-lg-5">
+					<div class="section-heading">
+						<h2>Sobre <strong>Mim</strong></h2>
+					</div>
+					<p class="lead">Olá! Sou a Micaela, com uma base sólida em Artes Visuais e formação em Programação
+						em Python. Encontrei no web design a forma ideal de juntar criatividade e tecnologia.</p>
+					<p class="mb-5  ">Gosto de criar interfaces visuais apelativas e funcionais, combinando o que
+						aprendi na arte, na fotografia e no desenvolvimento web. Estou sempre à procura de novos
+						desafios e oportunidades para crescer nesta área. <br><br>Se quiseres saber mais sobre o meu
+						trabalho ou colaborar comigo, estou sempre aberta a novas ideias.</p>
+
+					<p>
+						<a href="#section-contact" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Contrate-me</a>
+						<a href="{{ url_for('static', filename='mika/curriculo/Micaela_Florencio_CV.pdf') }}" target="_blank"
+							class="btn btn-secondary px-4 py-2 btn-sm">Descarregar CV</a>
+					</p>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<!-- PORTFÓLIO -->
+
+	<section class="site-section" id="section-portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="section-heading text-center col-md-12">
+					<h2>Algumas <strong>Fotos</strong></h2>
+				</div>
+			</div>
+
+			<div class="camera-wrapper text-center">
+				<div class="camera-frame">
+					<!-- Imagem da parte traseira da câmara -->
+					<img src="{{ url_for('static', filename='mika/images/camera.png') }}" alt="Camera Back"
+						class="camera-img">
+
+					<!-- Aqui aparecem as tuas fotos -->
+					<img src="{{ url_for('static', filename='mika/images_camera/IMG_0036.JPG') }}" alt="Photo 1"
+						class="photo-inside" id="photoDisplay">
+
+					<!-- Botões para mudar de foto -->
+					<!-- Botões com SVGs -->
+					<button class="nav-arrow left-arrow" onclick="prevPhoto()" aria-label="Foto anterior">
+						<svg width="24" height="24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+							stroke-linejoin="round">
+							<polyline points="15 18 9 12 15 6" />
+						</svg>
+					</button>
+
+					<button class="nav-arrow right-arrow" onclick="nextPhoto()" aria-label="Próxima foto">
+						<svg width="24" height="24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+							stroke-linejoin="round">
+							<polyline points="9 18 15 12 9 6" />
+						</svg>
+					</button>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="site-section pb-0" id="section-services">
+		<div class="container">
+			<div class="row mb-4">
+				<div class="col-md-12">
+					<div class="section-heading text-center">
+						<h2>Alguns <strong>Projetos</strong></h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- Projeto 1 -->
+				<div class="col-md-6 col-lg-4 text-center mb-5">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+						<h3 class="mb-4">Gerador de Passwords</h3>
+
+						<div class="moldura-jogos-wrapper">
+							<div class="moldura-jogos">
+								<img src="{{ url_for('static', filename='mika/images/password_icon.png') }}"
+									class="foto-jogos imagem" />
+							</div>
+						</div>
+
+						<br>
+						<p>
+							<!-- Abre o modal com o vídeo -->
+							<a href="#" class="site-link ver-projeto"
+								data-video="{{ url_for('static', filename='mika/videos/password.mp4') }}">
+								Ver Projeto <i class="icon-play"></i>
+							</a>
+							&nbsp;&nbsp;|&nbsp;&nbsp;
+							<!-- Faz o download -->
+							<a href="{{ url_for('static', filename='mika/projetos/gerar_password_copia.zip') }}"
+								class="site-link" download>
+								Descarregar <i class="icon-download"></i>
+							</a>
+						</p>
+					</div>
+				</div>
+
+				<!-- Projeto 2 -->
+				<div class="col-md-6 col-lg-4 text-center mb-5">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+						<h3 class="mb-4">Jogos Simples</h3>
+
+						<div class="moldura-jogos-wrapper">
+							<div class="moldura-jogos">
+								<img src="{{ url_for('static', filename='mika/images/game-control_icon.png') }}"
+									class="foto-jogos imagem" />
+							</div>
+						</div>
+
+						<br>
+						<p>
+							<a href="#" class="site-link ver-projeto"
+								data-video="{{ url_for('static', filename='mika/videos/jogos_simples.mp4') }}">
+								Ver Projeto <i class="icon-play"></i>
+							</a>
+							&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="{{ url_for('static', filename='mika/projetos/conjunto_jogos_simples_copia.zip') }}" class="site-link" download>
+								Descarregar <i class="icon-download"></i>
+							</a>
+						</p>
+					</div>
+				</div>
+
+
+				<!-- Projeto 3 -->
+				<div class="col-md-6 col-lg-4 text-center mb-5">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+						<h3 class="mb-4">Tetris</h3>
+
+						<div class="moldura-jogos-wrapper">
+							<div class="moldura-jogos">
+								<img src="{{ url_for('static', filename='mika/images/tetris_icon.png') }}"
+									class="foto-jogos imagem" />
+							</div>
+						</div>
+
+						<br>
+						<p>
+							<a href="#" class="site-link ver-projeto"
+								data-video="{{ url_for('static', filename='mika/videos/tetris.mp4') }}">
+								Ver Projeto <i class="icon-play"></i>
+							</a>
+							&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="{{ url_for('static', filename='mika/projetos/tetris_final_copia.zip') }}" class="site-link" download>
+								Descarregar <i class="icon-download"></i>
+							</a>
+						</p>
+					</div>
+				</div>
+
+			</div>
+	</section>
+
+	<!-- Modal (popup) -->
+	<div id="videoModal" class="video-modal">
+		<div class="video-modal-content">
+			<span class="close-modal">&times;</span>
+			<video id="modalVideo" controls autoplay>
+				<source src="" type="video/mp4">
+				O seu navegador não suporta vídeos.
+			</video>
+		</div>
+	</div>
+
+
+	<!-- CONTACTO -->
+
+	<section class="site-section" id="section-contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center">
+						<h2>Entre em <strong>Contato</strong></h2>
+					</div>
+				</div>
+
+				<div class="col-md-7 mb-5 mb-md-0">
+					<form action="" class="site-form">
+
+						<div class="form-group">
+							<input type="text" class="form-control px-3 py-4" placeholder="Nome">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control px-3 py-4" placeholder="Email">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control px-3 py-4" placeholder="Número">
+						</div>
+						<div class="form-group mb-5">
+							<textarea class="form-control px-3 py-4" cols="30" rows="10"
+								placeholder="Escreva a sua mensagem"></textarea>
+						</div>
+						<div class="form-group">
+							<input type="submit" class="btn btn-primary  px-4 py-3" value="Enviar Mensagem">
+						</div>
+					</form>
+				</div>
+				<div class="col-md-5 pl-md-5">
+					<h3 class="mb-5">Detalhes de Contacto</h3>
+					<ul class="site-contact-details">
+						<li>
+							<span class="text-uppercase">Email</span>
+							micaelasofia666@gmail.com
+						</li>
+						<li>
+							<span class="text-uppercase">Telemovél</span>
+							+351 937 105 901
+						</li>
+						<li>
+							<span class="text-uppercase">Morada</span>
+							Praceta Maestro Afonso Valentim, Porto <br>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="site-footer">
+		<div class="container">
+
+			<div class="row mb-5">
+				<p class="col-12 text-center">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					Copyright &copy;
+					<script>document.write(new Date().getFullYear());</script> Micaela Florêncio
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		const photos = [
+			"{{ url_for('static', filename='mika/images_camera/IMG_0036.JPG') }}",
+			"{{ url_for('static', filename='mika/images_camera/IMG_0051.JPG') }}",
+			"{{ url_for('static', filename='mika/images_camera/IMG_0310.JPG') }}",
+			"{{ url_for('static', filename='mika/images_camera/IMG_0313.JPG') }}",
+			"{{ url_for('static', filename='mika/images_camera/IMG_0326.JPG') }}",
+			"{{ url_for('static', filename='mika/images_camera/IMG_0335.JPG') }}",
+			"{{ url_for('static', filename='mika/images_camera/IMG_0362.JPG') }}",
+			"{{ url_for('static', filename='mika/images_camera/IMG_0389.JPG') }}",
+		];
+	</script>
+	<script src="{{ url_for('static', filename='mika/js/camera.js') }}"></script>
+
+	<script src="{{ url_for('static', filename='mika/js/vendor/jquery.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='mika/js/vendor/jquery-migrate-3.0.1.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='mika/js/vendor/popper.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='mika/js/vendor/bootstrap.min.js') }}"></script>
+
+	<script src="{{ url_for('static', filename='mika/js/vendor/jquery.easing.1.3.js') }}"></script>
+
+	<script src="{{ url_for('static', filename='mika/js/vendor/jquery.stellar.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='mika/js/vendor/jquery.waypoints.min.js') }}"></script>
+
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+	<script src="{{ url_for('static', filename='mika/js/custom.js') }}"></script>
+
+	<!-- Google Map -->
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    	<script src="js/google-map.js"></script> -->
+
+</body>
+
+</html>
